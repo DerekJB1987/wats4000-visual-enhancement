@@ -7,8 +7,11 @@
 </template>
 
 <script>
-import MessageItem from '@/components/MessageItem';
+import axios from 'axios';
 require('vue2-animate/dist/vue2-animate.min.css');
+
+import CubeSpinner from '@/components/CubeSpinner';
+import MessageContainer from '@/components/MessageContainer';
 
 export default {
   name: 'MessageContainer',
@@ -16,8 +19,9 @@ export default {
     messages: Array
   },
   components: {
-    'message-item': MessageItem
-  }
+    spinner: CubeSpinner,
+    'message-container': MessageContainer
+  },
 }
 </script>
 

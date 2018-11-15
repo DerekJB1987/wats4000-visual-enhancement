@@ -1,5 +1,6 @@
 <template>
     <div>
+        <spinner v-if="showSpinner"> </spinner>
         <h2>Loading...</h2>
         <div class="sk-folding-cube">
           <div class="sk-cube1 sk-cube"></div>
@@ -11,6 +12,9 @@
 </template>
 
 <script>
+
+import CubeSpinner from '@/components/CubeSpinner';
+
 export default {
   name: 'CubeSpinner'
 }
