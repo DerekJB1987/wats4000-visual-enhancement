@@ -73,12 +73,12 @@ export default {
       if (this.wordList.indexOf(word) === -1) {
         this.wordList.push(word);
         this.messages.push({
-          type: 'success',
+          type: "success",
           text: `${word} added to WordList.`
         });
       } else {
         this.messages.push({
-        type: 'info',
+        type: "info",
         text: `${word} is already on the WordList.`
         });
       }
@@ -86,7 +86,7 @@ export default {
     removeWord: function (word) {
       this.wordList.splice(this.wordList.indexOf(word), 1);
       this.messages.push({
-        type: 'success',
+        type: "success",
         text: `${word} removed from WordList.`
       });
     },

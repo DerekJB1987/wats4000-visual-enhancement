@@ -16,7 +16,7 @@ import MessageContainer from '@/components/MessageContainer';
 export default {
   name: 'MessageContainer',
   props: {
-    messages: Array
+    messages: []
   },
   components: {
     spinner: CubeSpinner,
