@@ -53,7 +53,7 @@ import MessageContainer from '@/components/MessageContainer';
 export default {
   name: 'WordSearch',
   components: {
-    spinner: CubeSpinner,
+    'spinner': CubeSpinner,
     'message-container': MessageContainer
   },
   data () {
