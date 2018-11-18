@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import MessageItem from '@/components/MessageItem';
 import axios from 'axios';
 require('vue2-animate/dist/vue2-animate.min.css');
 
@@ -16,12 +17,11 @@ import MessageContainer from '@/components/MessageContainer';
 export default {
   name: 'MessageContainer',
   props: {
-    messages: []
+    messages: [],
   },
   components: {
-    spinner: CubeSpinner,
-    'message-container': MessageContainer
-  },
+    'message-item': MessageItem
+  }
 }
 </script>
 

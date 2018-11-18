@@ -18,7 +18,7 @@
       <h2>Word List</h2>
       <ul class="word-list">
         <transition-group name="slideRight" tag="div" appear>
-          <li v-for="word in wordList">{{ word }}&nbsp;<button v-on:click="removeWord(word)" class="remove-word">x</button></li>
+          <li v-for="word in wordList" v-bind:key="word">{{ word }}&nbsp;<button v-on:click="removeWord(word)" class="remove-word">x</button></li>
         </transition-group>
       </ul>
     </div>
@@ -53,7 +53,7 @@ import MessageContainer from '@/components/MessageContainer';
 export default {
   name: 'WordSearch',
   components: {
-    'spinner': CubeSpinner,
+    spinner: CubeSpinner,
     'message-container': MessageContainer
   },
   data () {
